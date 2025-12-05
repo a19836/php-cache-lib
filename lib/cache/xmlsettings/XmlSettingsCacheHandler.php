@@ -1,0 +1,27 @@
+<?php
+/*
+ * Copyright (c) 2025 Bloxtor (http://bloxtor.com) and Joao Pinto (http://jplpinto.com)
+ * 
+ * Multi-licensed: BSD 3-Clause | Apache 2.0 | GNU LGPL v3 | HLNC License (http://bloxtor.com/LICENSE_HLNC.md)
+ * Choose one license that best fits your needs.
+ *
+ * Original PHP Cache Lib Repo: https://github.com/a19836/phpcachelib/
+ * Original Bloxtor Repo: https://github.com/a19836/bloxtor
+ *
+ * YOU ARE NOT AUTHORIZED TO MODIFY OR REMOVE ANY PART OF THIS NOTICE!
+ */
+
+include_once get_lib("cache.CacheHandlerUtil");
+include_once get_lib("cache.xmlsettings.IXmlSettingsCacheHandler");
+
+abstract class XmlSettingsCacheHandler implements IXmlSettingsCacheHandler {
+	protected $cache_ttl = 30758400;//in secunds ==> 1 year
+	
+	public function setCacheTTL($cache_ttl) {$this->cache_ttl = $cache_ttl;}
+	public function getCacheTTL() {return $this->cache_ttl;}
+
+	protected function prepareFilePath(&$file_path) {
+		$file_path = CacheHandlerUtil::getCacheFilePath($file_path);
+	}
+}
+?>
