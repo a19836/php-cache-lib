@@ -37,7 +37,6 @@ switch($type) {
 
 //SET SOME STYLING
 $style = '<style>
-select {background:#eee; border:1px solid #ccc; border-radius:3px; padding:3px 2px;}
 h1 {margin-bottom:0; text-align:center;}
 h5 {font-size:1em; margin:40px 0 0; font-weight:bold;}
 p {margin:0 0 20px; text-align:center;}
