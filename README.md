@@ -1,7 +1,7 @@
 # PHP Cache Lib
 
 > Original Repos:   
-> - PHP Cache Lib: https://github.com/a19836/phpcachelib/   
+> - PHP Cache Lib: https://github.com/a19836/php-cache-lib/   
 > - Bloxtor: https://github.com/a19836/bloxtor/
 
 ## Overview
